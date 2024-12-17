@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radar</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/breakpoints.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav-container">
+
+            <a href="index.html">
+                <svg class="logo" viewBox="0 0 107.68 28.74" fill="currentColor" 
+                xmlns="http://www.w3.org/2000/svg">
+                    <g id="Layer_1-2">
+                        <path
+                            d="M100.19 10.76h7.5v.5c0 2.06-1.66 3.7-3.75 3.7s-3.75-1.65-3.75-3.7v-.5ZM6.76 14.05h.66c2.21 0 4.69-.41 4.69-3.19S9.63 7.67 7.42 7.67h-.66v6.38Zm14.86 14.12h-8.41l-6.38-9.84h-.07v9.84H0V2.58h10.11c5.14 0 9.04 2.41 9.04 7.87 0 3.53-2 6.58-5.69 7.23l8.17 10.49ZM28.15 19.48c0 2.21 1.48 3.9 4.04 3.9s4.03-1.7 4.03-3.9-1.48-3.94-4.03-3.94-4.04 1.8-4.04 3.94m14.14 8.69h-6.28v-1.93h-.07c-1.1 1.73-3.28 2.51-5.35 2.51-5.24 0-8.93-4.31-8.93-9.3s3.62-9.26 8.86-9.26c2.03 0 4.17.75 5.48 2.27v-1.7h6.28v17.41ZM51.53 19.48c0 2.21 1.48 3.9 4.03 3.9s4.03-1.7 4.03-3.9-1.48-3.94-4.03-3.94-4.03 1.8-4.03 3.94m7.86 6.75h-.07c-1.1 1.73-3.28 2.51-5.35 2.51-5.24 0-8.93-4.31-8.93-9.3s3.62-9.26 8.86-9.26c2.03 0 4.17.75 5.48 2.27V0h6.28v28.17h-6.28v-1.93ZM74.44 19.48c0 2.21 1.48 3.9 4.04 3.9s4.03-1.7 4.03-3.9-1.48-3.94-4.03-3.94-4.04 1.8-4.04 3.94m14.14 8.69H82.3v-1.93h-.07c-1.1 1.73-3.28 2.51-5.35 2.51-5.24 0-8.93-4.31-8.93-9.3s3.62-9.26 8.86-9.26c2.03 0 4.17.75 5.48 2.27v-1.7h6.28v17.41ZM92.38 10.76h6.28v17.41h-6.28z">
+                        </path>
+                    </g>
+                </svg>
+            </a>
+                    <!-- Mobil navbar -->
+                    <div onclick="toggleMenuActive()" id="burger" class="burger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+
+
+                    <aside id="mobile-menu" class="mobile-menu">
+                        <ul class="nav-links-mobile">
+                            <li><a href="/koncertprogram.html">Koncertprogram</a></li>
+                            <li><a href="/radarnetvaerk.html">Radar Netværk</a></li>
+                            <li><a href="/blog.html">Blog</a></li>
+                            <li><a href="/frivillig.html">Bliv Frivillig</a></li>
+                            <li><a href="/omradar.html">Om Radar</a></li>
+                        </ul>
+                    </aside>
+
+                    <!-- Desktop navbar -->
+                    <ul class="nav-links">
+                        <li><a href="/koncertprogram.html">Koncertprogram</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="/radarnetvaerk.html">
+                                    Radar Netværk
+                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m8 10 4 4 4-4" />
+                                    </svg>
+                                </a>
+                                <div class="dropdown-content">
+                                    <ul>
+                                        <a href="/radarnetvaerk.html#section1">
+                                            <li>Nyheder</li>
+                                        </a>
+                                        <a href="/radarnetvaerk.html#section2">
+                                            <li>Mindedeling</li>
+                                        </a>
+                                        <a href="/radarnetvaerk.html#section3">
+                                            <li>Ønskeliste</li>
+                                        </a>
+                                        <a href="/radarnetvaerk.html#section4">
+                                            <li>Musikanbefalinger</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="/blog.html">Blog</a></li>
+                        <li><a href="/frivillig.html">Bliv Frivillig</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="/omradar.html">Om Radar <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m8 10 4 4 4-4" />
+                                    </svg>
+                                </a>
+                                <div class="dropdown-content">
+                                    <ul>
+                                        <a>
+                                            <li>Podcast</li>
+                                        </a>
+                                        <a>
+                                            <li>Arkiv</li>
+                                        </a>
+                                        <a>
+                                            <li>Venue Specs</li>
+                                        </a>
+                                        <a>
+                                            <li>Informationer</li>
+                                        </a>
+                                        <a>
+                                            <li>Workshops</li>
+                                        </a>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="nav-log-in">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-width="2"
+                                        d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                </svg>
+                                <span>log in<span>
+                            </a>
+                        </li>
+
+                    </ul>
+        </nav>
+    </header>
+
+    <!--Hero-->
+
+    <main class="main-hero">
+        <div class="main-hero-content text-center-mobile">
+            <span class="mobile-hidden">Godsbanen | Aarhus C</span>
+            <svg id="Layer_2" viewBox="0 0 107.68 28.74" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <g id="Layer_1-2">
+                    <path
+                        d="M100.19 10.76h7.5v.5c0 2.06-1.66 3.7-3.75 3.7s-3.75-1.65-3.75-3.7v-.5ZM6.76 14.05h.66c2.21 0 4.69-.41 4.69-3.19S9.63 7.67 7.42 7.67h-.66v6.38Zm14.86 14.12h-8.41l-6.38-9.84h-.07v9.84H0V2.58h10.11c5.14 0 9.04 2.41 9.04 7.87 0 3.53-2 6.58-5.69 7.23l8.17 10.49ZM28.15 19.48c0 2.21 1.48 3.9 4.04 3.9s4.03-1.7 4.03-3.9-1.48-3.94-4.03-3.94-4.04 1.8-4.04 3.94m14.14 8.69h-6.28v-1.93h-.07c-1.1 1.73-3.28 2.51-5.35 2.51-5.24 0-8.93-4.31-8.93-9.3s3.62-9.26 8.86-9.26c2.03 0 4.17.75 5.48 2.27v-1.7h6.28v17.41ZM51.53 19.48c0 2.21 1.48 3.9 4.03 3.9s4.03-1.7 4.03-3.9-1.48-3.94-4.03-3.94-4.03 1.8-4.03 3.94m7.86 6.75h-.07c-1.1 1.73-3.28 2.51-5.35 2.51-5.24 0-8.93-4.31-8.93-9.3s3.62-9.26 8.86-9.26c2.03 0 4.17.75 5.48 2.27V0h6.28v28.17h-6.28v-1.93ZM74.44 19.48c0 2.21 1.48 3.9 4.04 3.9s4.03-1.7 4.03-3.9-1.48-3.94-4.03-3.94-4.04 1.8-4.04 3.94m14.14 8.69H82.3v-1.93h-.07c-1.1 1.73-3.28 2.51-5.35 2.51-5.24 0-8.93-4.31-8.93-9.3s3.62-9.26 8.86-9.26c2.03 0 4.17.75 5.48 2.27v-1.7h6.28v17.41ZM92.38 10.76h6.28v17.41h-6.28z">
+                    </path>
+                </g>
+            </svg>
+            <p class="mobile-hidden">Upcoming bands og intime koncertoplevelser i hjertet af Aarhus. Din scene for ny og alternativ musik.</p>
+            <p class="desktop-hidden">Upcoming bands og intime koncertoplevelser i hjertet af Aarhus.</p>
+
+            <a href="/koncertprogram.html"><button class="btn-outline">Koncertprogram</button></a>
+        </div>
+        <div class="overlay"></div>
+        <img class="mobile-hidden" src="img/radar-hero1.jpg" alt="">
+        <img class="desktop-hidden" src="img/radar-hero1-mobile.jpg" alt="">
+    </main>
+
+    <!--Slut Hero-->
+
+
+    <!--Featured Koncerter !!!!!----AI SLIDER----!!!!! -->
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide">
+                <div class="slide-content text-center-mobile">
+                    <span class="date-span">1. Jan. 2025</span>
+                    <h2>Bissesvinet</h2>
+                    <p class="max-width-sm">
+                        Til de nysgerrige og kvalitetsbevidste: Oplev håndplukkede artister undervejs på
+                        deres rejse mod et større publikum.
+                    </p>
+                    <a href="/annaroemer.html"><button class="btn-fill">Book her</button></a>
+                </div>
+                <img class="mobile-hidden"  src="img/edit/bissesvinetedit2.png" alt="Image 1">
+                <img class="desktop-hidden" src="img/edit/mobile/bissesvinetedit-mobile.png" alt="Image 3">
+            </div>
+
+            <div class="slide">
+                <div class="slide-content text-center-mobile">
+                    <span class="date-span">1. Jan. 2025</span>
+                    <h2>Anna Roemer</h2>
+                    <p class="max-width-sm">
+                        Sammen med sin jazzmaster og sit pedalboard, sprænger Anna Roemer rammerne for hvad en sologuitarist kan.
+                    </p>
+                    <a href="/annaroemer.html"><button class="btn-fill">Book her</button></a>
+                </div>
+                <img class="mobile-hidden" src="img/edit/annaroemeredit2.png" alt="Image 3">
+                <img class="desktop-hidden" src="img/edit/mobile/annaroemeredit-mobile.png" alt="Image 3">
+            </div>
+
+            <div class="slide">
+                <div class="slide-content text-center-mobile">
+                    <span class="date-span">1. Jan. 2025</span>
+                    <h2>Gorgeous</h2>
+                    <p class="max-width-sm text-white">
+                        Fantastiske Gorgeous udgiver deres længeventede debut, og giver koncert på Radar i starten af 2025.
+                    </p>
+                    <a href="/annaroemer.html"><button class="btn-fill">Book her</button></a>
+                </div>
+                <div class="overlay"></div>
+                <img class="mobile-hidden" src="img/edit/gorgeousedit2.png" alt="Image 3">
+                <img class="desktop-hidden" src="img/edit/mobile/gorgeousedit-mobile.png" alt="Image 3">
+            </div>
+
+        </div>
+        <div class="dots-container">
+            <span class="dot" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+
+        </div>
+        <button class="slide-arrow-left mobile-hidden" onclick="arrowSlideLeft()">
+            <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"
+                viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m15 19-7-7 7-7" />
+            </svg>
+        </button>
+
+        <button class="slide-arrow-right mobile-hidden" onclick="arrowSlideRight()">
+            <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"
+                viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m9 5 7 7-7 7" />
+            </svg>
+        </button>
+
+
+    </div>
+    <!--Slut Featured Koncerter !!!!!----AI SLIDER----!!!!! -->
+
+
+    <!--Upcoming koncerter-->
+    <section class="section-gap">
+
+        <div class="section-content">
+            <h2 class="margin-space-base">Koncertprogram</h2>
+
+            <!-- Frontpage opkommende koncerter grid -->
+            <div class="grid grid--default">
+                <!--concert containe 1-->
+                <a href="/annaroemer.html" class="concert-container">
+                    <div class="concert-container-items">
+                        <div>
+                            <h3 class="text-truncate">Bissesvinet</h3>
+                            <span class="concert-container-tickets">Billetter →</span>
+                        </div>
+                        <span class="concert-container-date">1. <br> jan.</span>
+                    </div>
+
+                    <div class="overlay"></div>
+                    <img src="img/bissesvinet.jpg" alt="">
+                </a>
+
+                <!--concert containe 2-->
+                <a href="/annaroemer.html" class="concert-container">
+                    <div class="concert-container-items">
+                        <div>
+                            <h3 class="text-truncate">Allen Anjeh</h3>
+                            <span class="concert-container-tickets">Billetter →</span>
+                        </div>
+                        <span class="concert-container-date">1. <br> jan.</span>
+                    </div>
+
+                    <div class="overlay"></div>
+                    <img src="img/allenanjeh.jpg" alt="">
+                </a>
+
+                <!--concert containe 3-->
+                <a href="/annaroemer.html" class="concert-container">
+                    <div class="concert-container-items">
+                        <div>
+                            <h3 class="text-truncate">Clothing Club [SUPPORT: KRAMMER]</h3>
+                            <span class="concert-container-tickets">Billetter →</span>
+                        </div>
+                        <span class="concert-container-date">1. <br> jan.</span>
+                    </div>
+
+                    <div class="overlay"></div>
+                    <img src="img/clothingclub.jpg" alt="">
+                </a>
+
+                <!--concert containe 4-->
+                <a href="/annaroemer.html" class="concert-container">
+                    <div class="concert-container-items">
+                        <div>
+                            <h3 class="text-truncate">Gorgeous</h3>
+                            <span class="concert-container-tickets">Billetter →</span>
+                        </div>
+                        <span class="concert-container-date">1. <br> jan.</span>
+                    </div>
+
+                    <div class="overlay"></div>
+                    <img src="img/gorgeous.jpg" alt="">
+                </a>
+
+                <!--concert containe 5-->
+                <a href="/annaroemer.html" class="concert-container mobile-hidden mobile-hidden--flex">
+                    <div class="concert-container-items">
+                        <div>
+                            <h3 class="text-truncate">Baryl</h3>
+                            <span class="concert-container-tickets">Billetter →</span>
+                        </div>
+                        <span class="concert-container-date">1. <br> jan.</span>
+                    </div>
+
+                    <div class="overlay"></div>
+                    <img src="img/baryl.jpg" alt="">
+                </a>
+
+                <!--concert containe 6-->
+                <a href="/annaroemer.html" class="concert-container mobile-hidden mobile-hidden--flex">
+                    <div class="concert-container-items">
+                        <div>
+                            <h3 class="text-truncate">Bushbabies</h3>
+                            <span class="concert-container-tickets">Billetter →</span>
+                        </div>
+                        <span class="concert-container-date">1. <br> jan.</span>
+                    </div>
+
+                    <div class="overlay"></div>
+                    <img src="img/bushbabies.jpeg" alt="">
+                </a>
+
+                <!--concert containe 7-->
+                <a href="/annaroemer.html" class="concert-container mobile-hidden mobile-hidden--flex">
+                    <div class="concert-container-items">
+                        <div>
+                            <h3 class="text-truncate">Anna Roemer</h3>
+                            <span class="concert-container-tickets">Billetter →</span>
+                        </div>
+                        <span class="concert-container-date">1. <br> jan.</span>
+                    </div>
+
+                    <div class="overlay"></div>
+                    <img src="img/annaroemer.jpg" alt="">
+                </a>
+
+                <!--concert containe 8-->
+                <a href="/annaroemer.html" class="concert-container mobile-hidden mobile-hidden--flex">
+                    <div class="concert-container-items">
+                        <div>
+                            <h3 class="text-truncate">Nikolaj Noerlund [SOLO]</h3>
+                            <span class="concert-container-tickets">Billetter →</span>
+                        </div>
+                        <span class="concert-container-date">1. <br> jan.</span>
+                    </div>
+
+                    <div class="overlay"></div>
+                    <img src="img/nikolajnoerlund.png" alt="">
+                </a>
+
+                <!--concert containe 9-->
+                <a href="/annaroemer.html" class="concert-container mobile-hidden mobile-hidden--flex">
+                    <div class="concert-container-items">
+                        <div>
+                            <h3 class="text-truncate">Guzo</h3>
+                            <span class="concert-container-tickets">Billetter →</span>
+                        </div>
+                        <span class="concert-container-date">1. <br> jan.</span>
+                    </div>
+
+                    <div class="overlay"></div>
+                    <img src="img/guzo.jpg" alt="">
+                </a>
+
+            </div>
+            <a href="/koncertprogram.html" class="read-more read-more--button text-center-mobile">Se Alle Events →</a>
+        </div>
+    </section>
+    <!--Slut Opkommende koncerter-->
+
+    <!--Radar Netværk-->
+    <section class="secondary-bg section-gap">
+
+        <div class="section-content text-center-mobile">
+            <h2>Radar Netværk</h2>
+            <p class="max-width-sm">Bliv en del af fællesskabet og vær med til at skrive historien om Radar</p>
+        </div>
+
+        <!--Mindedeling-->
+        <div class="section-content">
+            <h3 class="text-center-mobile">Mindedeling</h3>
+            <!--grid slim component-->
+            <div class="grid grid--slim">
+
+
+                <!--minde container-->
+                <div class="minde-container stacked">
+                    <div class="stacked-images">
+                        <a href="#" class="minde-container-img">
+                            <img class="image-cover" src="img/minde1.png" alt="">
+                        </a>
+                        <a href="#" class="minde-container-img">
+                            <img class="image-cover" src="img/minde4.png" alt="">
+                        </a>
+                        <a href="#" class="minde-container-img">
+                            <img class="image-cover" src="img/minde3.png" alt="">
+                        </a>
+                    </div>
+                    <div class="minde-container-items">
+                        <p class="minde-container-items-band"><a href="#">The Neon Rebels</a></p>
+                        <p class="minde-container-items-quote text-truncate"><a href="#">Magisk aften med vild energi!
+                                Bandet gav den max gas🤘</a></p>
+                        <a href="#" class="user-row">
+                            <img class="image-cover" src="img/user-avatar.jpg" alt="">
+                            <span>Ulla Larsen</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!--minde container-->
+                <div class="minde-container">
+                    <a href="#" class="minde-container-img">
+                        <img class="image-cover" src="img/minde3.png" alt="">
+                    </a>
+                    <div class="minde-container-items">
+                        <p class="minde-container-items-band"><a href="#">The night Watchers</a></p>
+                        <p class="minde-container-items-quote text-truncate"><a href="#">Fed stemning og god lyd som
+                                altid. Radar leverer bare!</a></p>
+                        <a href="#" class="user-row">
+                            <img class="image-cover" src="img/user-avatar.jpg" alt="">
+                            <span>Ib Ibsen</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!--minde container-->
+                <div class="minde-container stacked">
+                    <div class="stacked-images">
+                        <a href="#" class="minde-container-img">
+                            <img class="image-cover" src="img/minde5.png" alt="">
+                        </a>
+                        <a href="#" class="minde-container-img">
+                            <img class="image-cover" src="img/minde2.png" alt="">
+                        </a>
+                        <a href="#" class="minde-container-img">
+                            <img class="image-cover" src="img/om-radar1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="minde-container-items">
+                        <p class="minde-container-items-band"><a href="#">Blæksprutten</a></p>
+                        <p class="minde-container-items-quote text-truncate"><a href="#">Intim koncert der ramte lige i
+                                hjertet. Elsker de små detaljer i lyden.</a></p>
+                        <a href="#" class="user-row">
+                            <img class="image-cover" src="img/user-avatar.jpg" alt="">
+                            <span>Emma Hansen</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!--minde container-->
+                <div class="minde-container">
+                    <a href="#" class="minde-container-img">
+                        <img class="image-cover" src="img/minde4.png" alt="">
+                    </a>
+                    <div class="minde-container-items">
+                        <p class="minde-container-items-band"><a href="#">Johnniband</a></p>
+                        <p class="minde-container-items-quote text-truncate"><a href="#">Min første koncert på Radar,
+                                men bestemt ikke min sidste. Fantastisk!</a></p>
+                        <a href="#" class="user-row">
+                            <img class="image-cover" src="img/user-avatar.jpg" alt="">
+                            <span>Lars Ullasen</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="/radarnetvaerk.html#section2" class="read-more read-more--button text-center-mobile">Læs mere →</a>
+        </div>
+        <!--Nyheder og updates-->
+        <div class="section-content text-center-mobile">
+            <h3 class="margin-space-base">Nyheder & Updates</h3>
+
+            <!--flex component-->
+            <div class="flex flex--cards">
+
+                <!--Card large-->
+                <a href="#" class="card card--large">
+                    <div class="card-content">
+                        <h4 class="text-truncate">Vi er klar med efterårets program!</h4>
+                        <span class="date-span">01-01-2025</span>
+                        <p class="text-truncate text-truncate--4">Efter måneders planlægning kan vi endelig løfte sløret
+                            for efterårets program. Vi er særligt stolte af at kunne præsentere både nye danske upcoming
+                            bands og etablerede artister. Vi starter med en uforglemmelig koncertaften, hvor flere af de
+                            nyeste talenter på den danske musikscene vil optræde. Samtidig har vi glæden af at byde
+                            velkommen til anerkendte artister, som vil bringe deres unikke lyd til Radar. Der er lagt op
+                            til en oplevelse, der både rummer intensitet og stor variation, og vi glæder os til at dele
+                            denne rejse med jer.</p>
+                    </div>
+                    <div class="card-bottom-line">
+                        <span class="read-more read-more--card">Se opslag →</span>
+                        <div class="card-likes">
+                            <span class="card-likes-like">
+                                <svg width="auto" height="auto" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                                        stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <span>214</span>
+                            </span>
+                            <span class="card-likes-comment">
+                                <svg aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" width="auto" height="auto" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                                        d="M7.556 8.5h8m-8 3.5H12m7.111-7H4.89a.896.896 0 0 0-.629.256.868.868 0 0 0-.26.619v9.25c0 .232.094.455.26.619A.896.896 0 0 0 4.89 16H9l3 4 3-4h4.111a.896.896 0 0 0 .629-.256.868.868 0 0 0 .26-.619v-9.25a.868.868 0 0 0-.26-.619.896.896 0 0 0-.63-.256Z" />
+                                </svg>
+
+                                <span>37</span>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <!--Card standard-->
+                <a href="#" class="card">
+                    <div class="card-content">
+                        <h4 class="text-truncate">Vi er klar med efterårets program!</h4>
+                        <span class="date-span">01-01-2025</span>
+                        <p class="text-truncate text-truncate--4">Efter måneders planlægning kan vi endelig løfte sløret
+                            for efterårets program. Vi er særligt stolte af at kunne præsentere både nye danske upcoming
+                            bands og etablerede artister. Vi starter med en uforglemmelig koncertaften, hvor flere af de
+                            nyeste talenter på den danske musikscene vil optræde. Samtidig har vi glæden af at byde
+                            velkommen til anerkendte artister, som vil bringe deres unikke lyd til Radar. Der er lagt op
+                            til en oplevelse, der både rummer intensitet og stor variation, og vi glæder os til at dele
+                            denne rejse med jer.</p>
+                    </div>
+                    <div class="card-bottom-line">
+                        <span class="read-more read-more--card">Se opslag →</span>
+                        <div class="card-likes">
+                            <span class="card-likes-like">
+                                <svg width="auto" height="auto" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                                        stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <span>214</span>
+                            </span>
+                            <span class="card-likes-comment">
+                                <svg aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" width="auto" height="auto" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                                        d="M7.556 8.5h8m-8 3.5H12m7.111-7H4.89a.896.896 0 0 0-.629.256.868.868 0 0 0-.26.619v9.25c0 .232.094.455.26.619A.896.896 0 0 0 4.89 16H9l3 4 3-4h4.111a.896.896 0 0 0 .629-.256.868.868 0 0 0 .26-.619v-9.25a.868.868 0 0 0-.26-.619.896.896 0 0 0-.63-.256Z" />
+                                </svg>
+
+                                <span>37</span>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+            <a href="/radarnetvaerk.html#section1" class="read-more read-more--button text-center-mobile">Læs mere →</a>
+        </div>
+        <!--Musikanbefalinger og Ønskeliste-->
+        <div class="section-content flex flex--cards text-center-mobile">
+            <!--Musikanbefalinger-->
+            <div class="flex-item">
+                <h3 class="margin-space-base">Musikanbefalinger</h3>
+                <a href="#" class="card">
+                    <div class="flex ">
+                        <ul class="flex-item list-style1">
+                            <li>Gråzoner - Mette Hansen (14. december)</li>
+                            <li>The Winter Moths - Jonas Nielsen (13. december)</li>
+                            <li>Nattelys - Emma Pedersen (12. december)</li>
+                            <li>Skumring - Lars Andersen (10. december)</li>
+                        </ul>
+
+                        <ul class="flex-item mobile-hidden list-style1">
+                            <li>Tågehorn - Marie Kristensen (5. december)</li>
+                            <li>The Night Sailors - Anders Larsen (3. december)</li>
+                            <li>Morgendis - Julie Madsen (1. december)</li>
+                            <li>Vandmærke - Frederik Poulsen (29. november)</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <!--Ønskeliste-->
+            <div class="oenskeliste- flex-item">
+                <h3 class="margin-space-base">Ønskeliste</h3>
+                <a href="#" class="card">
+                    <div class="flex ">
+                        <ul class="flex-item list-style1">
+                            <li>Stjernedrys (438 likes)</li>
+                            <li>Blæksprutten (387 likes)</li>
+                            <li>The Midnight Ravens (356 likes)</li>
+                            <li>Bølgebryder (334 likes)</li>
+                            <li>Sølvfugl (312 likes)</li>
+                        </ul>
+
+                        <ul class="flex-item mobile-hidden list-style1">
+                            <li>Nordlyset (287 likes)</li>
+                            <li>Drømmefanger (265 likes)</li>
+                            <li>Stormsejler (234 likes)</li>
+                            <li>The Crystal Moths (212 likes)</li>
+                            <li>Måneskygge (198 likes)</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--Slut Radar Netværk-->
+
+    <!--Om Radar-->
+    <section>
+        <div class="section-content flex flex--align-center flex--row-reverse-desktop">
+            <!--Flexbox Om Radar-->
+            <div class="flex-item-img flex-item-img--style1">
+                <img src="img/om-radar1.jpg" class="image-cover" alt="">
+            </div>
+
+            <div class="flex-item">
+                <h2>About Radar</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat.</p>
+                <a href="/omradar.html" class="read-more text-center-mobile">Læs mere</a>
+                <h3>Bliv Frivillig</h3>
+                <p>ewfakbuf abkawuilef bawef buaew buf abuwzef buaef buaf lubfl ulab fulawflb uafublwaef ubl fewab
+                    fluawbf
+                    uleaw fwe ffes fes</p>
+                <a href="/frivillig.html" class="read-more text-center-mobile">Læs mere</a>
+            </div>
+        </div>
+    </section>
+    <!--SLut Om Radar-->
+
+    <!-- Blog og Nyheder-->
+    <section class="secondary-bg">
+        <div class="section-content">
+            <h2 class="margin-space-base">Blog</h2>
+            <!--Article cards grid-->
+            <div class="grid grid--cards">
+
+                <!--Article card 1-->
+                <article class="articlecard">
+                    <div class="articlecard-img">
+                        <a href="#">
+                            <img class="image-cover" src="img/blog1-radar-2025.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="articlecard-items">
+                        <span class="date-span">12-12-2024</span>
+                        <h3 class="text-truncate"><a href="#">Sådan bliver Radars 2025</a></h3>
+                        <p class="text-truncate"><a href="#" class="articlecard-tagline">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit,
+                                sed do eiusmod tempor...</a></p>
+                        <a href="#" class="read-more read-more--card">Læs Artikel →</a>
+                    </div>
+                </article>
+
+                <!--Article card 2-->
+                <article class="articlecard">
+                    <div class="articlecard-img">
+                        <a href="#">
+                            <img class="image-cover" src="img/blog2-turkis.png" alt="">
+                        </a>
+                    </div>
+                    <div class="articlecard-items">
+                        <span class="date-span">12-12-2024</span>
+                        <h3 class="text-truncate"><a href="#">TURKIS: ”Radar har været vores sammen...</a></h3>
+                        <p class="text-truncate"><a href="#" class="articlecard-tagline">I vores føljeton om Radars
+                                fremtid har vi taget en snak
+                                med lederteamet på Turkis...</a></p>
+                        <a href="#" class="read-more read-more--card">Læs Artikel →</a>
+                    </div>
+                </article>
+
+                <!--Article card 3-->
+                <article class="articlecard">
+                    <div class="articlecard-img">
+                        <a href="#">
+                            <img class="image-cover" src="img/blog3-sophia.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="articlecard-items">
+                        <span class="date-span">12-12-2024</span>
+                        <h3 class="text-truncate"><a href="#">Sophia Sagaradze: ”Jeg havde ikke...</a></h3>
+                        <p class="text-truncate"><a href="#" class="articlecard-tagline">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit,
+                                sed do eiusmod tempor...</a></p>
+                        <a href="#" class="read-more read-more--card">Læs Artikel →</a>
+                    </div>
+                </article>
+            </div>
+            <a href="/blog.html" class="read-more read-more--button">Se blog →</a>
+        </div>
+    </section>
+    <!--Slut Blog og Nyheder-->
+    <footer>
+        <p>2024 Radar Music Venue</p>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radar - Blog</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/breakpoints.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav-container">
+
+            <a href="index.html">
+                <svg class="logo" viewBox="0 0 107.68 28.74" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Layer_1-2">
+                        <path
+                            d="M100.19 10.76h7.5v.5c0 2.06-1.66 3.7-3.75 3.7s-3.75-1.65-3.75-3.7v-.5ZM6.76 14.05h.66c2.21 0 4.69-.41 4.69-3.19S9.63 7.67 7.42 7.67h-.66v6.38Zm14.86 14.12h-8.41l-6.38-9.84h-.07v9.84H0V2.58h10.11c5.14 0 9.04 2.41 9.04 7.87 0 3.53-2 6.58-5.69 7.23l8.17 10.49ZM28.15 19.48c0 2.21 1.48 3.9 4.04 3.9s4.03-1.7 4.03-3.9-1.48-3.94-4.03-3.94-4.04 1.8-4.04 3.94m14.14 8.69h-6.28v-1.93h-.07c-1.1 1.73-3.28 2.51-5.35 2.51-5.24 0-8.93-4.31-8.93-9.3s3.62-9.26 8.86-9.26c2.03 0 4.17.75 5.48 2.27v-1.7h6.28v17.41ZM51.53 19.48c0 2.21 1.48 3.9 4.03 3.9s4.03-1.7 4.03-3.9-1.48-3.94-4.03-3.94-4.03 1.8-4.03 3.94m7.86 6.75h-.07c-1.1 1.73-3.28 2.51-5.35 2.51-5.24 0-8.93-4.31-8.93-9.3s3.62-9.26 8.86-9.26c2.03 0 4.17.75 5.48 2.27V0h6.28v28.17h-6.28v-1.93ZM74.44 19.48c0 2.21 1.48 3.9 4.04 3.9s4.03-1.7 4.03-3.9-1.48-3.94-4.03-3.94-4.04 1.8-4.04 3.94m14.14 8.69H82.3v-1.93h-.07c-1.1 1.73-3.28 2.51-5.35 2.51-5.24 0-8.93-4.31-8.93-9.3s3.62-9.26 8.86-9.26c2.03 0 4.17.75 5.48 2.27v-1.7h6.28v17.41ZM92.38 10.76h6.28v17.41h-6.28z">
+                        </path>
+                    </g>
+                </svg>
+            </a>
+            <!-- Mobil navbar -->
+            <div onclick="toggleMenuActive()" id="burger" class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+
+
+            <aside id="mobile-menu" class="mobile-menu">
+                <ul class="nav-links-mobile">
+                    <li><a href="/koncertprogram.html">Koncertprogram</a></li>
+                    <li><a href="/radarnetvaerk.html">Radar Netværk</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                    <li><a href="/frivillig.html">Bliv Frivillig</a></li>
+                    <li><a href="/omradar.html">Om Radar</a></li>
+                </ul>
+            </aside>
+
+            <!-- Desktop navbar -->
+            <ul class="nav-links">
+                <li><a href="/koncertprogram.html">Koncertprogram</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a href="/radarnetvaerk.html">
+                            Radar Netværk
+                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m8 10 4 4 4-4" />
+                            </svg>
+                        </a>
+                        <div class="dropdown-content">
+                            <ul>
+                                <a href="/radarnetvaerk.html#section1">
+                                    <li>Nyheder</li>
+                                </a>
+                                <a href="/radarnetvaerk.html#section2">
+                                    <li>Mindedeling</li>
+                                </a>
+                                <a href="/radarnetvaerk.html#section3">
+                                    <li>Ønskeliste</li>
+                                </a>
+                                <a href="/radarnetvaerk.html#section4">
+                                    <li>Musikanbefalinger</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="/frivillig.html">Bliv Frivillig</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a href="/omradar.html">Om Radar <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m8 10 4 4 4-4" />
+                            </svg>
+                        </a>
+                        <div class="dropdown-content">
+                            <ul>
+                                <a>
+                                    <li>Podcast</li>
+                                </a>
+                                <a>
+                                    <li>Arkiv</li>
+                                </a>
+                                <a>
+                                    <li>Venue Specs</li>
+                                </a>
+                                <a>
+                                    <li>Informationer</li>
+                                </a>
+                                <a>
+                                    <li>Workshops</li>
+                                </a>
+                            </ul>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="nav-log-in">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-width="2"
+                                d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>
+                        <span>log in<span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!--Hero-->
+
+    <main class="underside-hero text-center-mobile">
+        <div class="underside-hero-content">
+            <h1>Blog og Nyheder</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry.
+            </p>
+        </div>
+        <div class="overlay"></div>
+        <img src="img/blog1-radar-2025.jpg" alt="">
+    </main>
+
+    <!--Slut Hero-->
+
+    <!-- Blog og Nyheder-->
+    <section>
+        <div class="section-content">
+            <h2 class="margin-space-base">Blog</h2>
+            <!--Article cards grid-->
+            <div class="grid grid--cards">
+
+                <!--Article card 1-->
+                <article class="articlecard">
+                    <div class="articlecard-img">
+                        <a href="#">
+                            <img class="image-cover" src="img/blog1-radar-2025.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="articlecard-items">
+                        <span class="date-span">12-12-2024</span>
+                        <h3 class="text-truncate"><a href="#">Sådan bliver Radars 2025</a></h3>
+                        <p class="text-truncate"><a href="#" class="articlecard-tagline">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit,
+                                sed do eiusmod tempor...</a></p>
+                        <a href="#" class="read-more read-more--card">Læs Artikel →</a>
+                    </div>
+                </article>
+
+                <!--Article card 2-->
+                <article class="articlecard">
+                    <div class="articlecard-img">
+                        <a href="#">
+                            <img class="image-cover" src="img/blog2-turkis.png" alt="">
+                        </a>
+                    </div>
+                    <div class="articlecard-items">
+                        <span class="date-span">12-12-2024</span>
+                        <h3 class="text-truncate"><a href="#">TURKIS: ”Radar har været vores sammen...</a></h3>
+                        <p class="text-truncate"><a href="#" class="articlecard-tagline">I vores føljeton om Radars
+                                fremtid har vi taget en snak
+                                med lederteamet på Turkis...</a></p>
+                        <a href="#" class="read-more read-more--card">Læs Artikel →</a>
+                    </div>
+                </article>
+
+                <!--Article card 3-->
+                <article class="articlecard">
+                    <div class="articlecard-img">
+                        <a href="#">
+                            <img class="image-cover" src="img/blog3-sophia.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="articlecard-items">
+                        <span class="date-span">12-12-2024</span>
+                        <h3 class="text-truncate"><a href="#">Sophia Sagaradze: ”Jeg havde ikke...</a></h3>
+                        <p class="text-truncate"><a href="#" class="articlecard-tagline">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit,
+                                sed do eiusmod tempor...</a></p>
+                        <a href="#" class="read-more read-more--card">Læs Artikel →</a>
+                    </div>
+                </article>
+                <!--Article card 4-->
+                <article class="articlecard">
+                    <div class="articlecard-img">
+                        <a href="#">
+                            <img class="image-cover" src="img/blog3-sophia.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="articlecard-items">
+                        <span class="date-span">12-12-2024</span>
+                        <h3 class="text-truncate"><a href="#">Sophia Sagaradze: ”Jeg havde ikke...</a></h3>
+                        <p class="text-truncate"><a href="#" class="articlecard-tagline">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit,
+                                sed do eiusmod tempor...</a></p>
+                        <a href="#" class="read-more read-more--card">Læs Artikel →</a>
+                    </div>
+                </article>
+
+
+                <!--Article card 1-->
+                <article class="articlecard">
+                    <div class="articlecard-img">
+                        <a href="#">
+                            <img class="image-cover" src="img/blog1-radar-2025.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="articlecard-items">
+                        <span class="date-span">12-12-2024</span>
+                        <h3 class="text-truncate"><a href="#">Sådan bliver Radars 2025</a></h3>
+                        <p class="text-truncate"><a href="#" class="articlecard-tagline">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit,
+                                sed do eiusmod tempor...</a></p>
+                        <a href="#" class="read-more read-more--card">Læs Artikel →</a>
+                    </div>
+                </article>
+
+                <!--Article card 2-->
+                <article class="articlecard">
+                    <div class="articlecard-img">
+                        <a href="#">
+                            <img class="image-cover" src="img/blog2-turkis.png" alt="">
+                        </a>
+                    </div>
+                    <div class="articlecard-items">
+                        <span class="date-span">12-12-2024</span>
+                        <h3 class="text-truncate"><a href="#">TURKIS: ”Radar har været vores sammen...</a></h3>
+                        <p class="text-truncate"><a href="#" class="articlecard-tagline">I vores føljeton om Radars
+                                fremtid har vi taget en snak
+                                med lederteamet på Turkis...</a></p>
+                        <a href="#" class="read-more read-more--card">Læs Artikel →</a>
+                    </div>
+                </article>
+
+                <!--Article card 3-->
+                <article class="articlecard">
+                    <div class="articlecard-img">
+                        <a href="#">
+                            <img class="image-cover" src="img/blog3-sophia.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="articlecard-items">
+                        <span class="date-span">12-12-2024</span>
+                        <h3 class="text-truncate"><a href="#">Sophia Sagaradze: ”Jeg havde ikke...</a></h3>
+                        <p class="text-truncate"><a href="#" class="articlecard-tagline">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit,
+                                sed do eiusmod tempor...</a></p>
+                        <a href="#" class="read-more read-more--card">Læs Artikel →</a>
+                    </div>
+                </article>
+                <!--Article card 4-->
+                <article class="articlecard">
+                    <div class="articlecard-img">
+                        <a href="#">
+                            <img class="image-cover" src="img/blog3-sophia.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="articlecard-items">
+                        <span class="date-span">12-12-2024</span>
+                        <h3 class="text-truncate"><a href="#">Sophia Sagaradze: ”Jeg havde ikke...</a></h3>
+                        <p class="text-truncate"><a href="#" class="articlecard-tagline">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit,
+                                sed do eiusmod tempor...</a></p>
+                        <a href="#" class="read-more read-more--card">Læs Artikel →</a>
+                    </div>
+                </article>
+
+                <!--Article card 1-->
+                <article class="articlecard">
+                    <div class="articlecard-img">
+                        <a href="#">
+                            <img class="image-cover" src="img/blog1-radar-2025.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="articlecard-items">
+                        <span class="date-span">12-12-2024</span>
+                        <h3 class="text-truncate"><a href="#">Sådan bliver Radars 2025</a></h3>
+                        <p class="text-truncate"><a href="#" class="articlecard-tagline">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit,
+                                sed do eiusmod tempor...</a></p>
+                        <a href="#" class="read-more read-more--card">Læs Artikel →</a>
+                    </div>
+                </article>
+
+                <!--Article card 2-->
+                <article class="articlecard">
+                    <div class="articlecard-img">
+                        <a href="#">
+                            <img class="image-cover" src="img/blog2-turkis.png" alt="">
+                        </a>
+                    </div>
+                    <div class="articlecard-items">
+                        <span class="date-span">12-12-2024</span>
+                        <h3 class="text-truncate"><a href="#">TURKIS: ”Radar har været vores sammen...</a></h3>
+                        <p class="text-truncate"><a href="#" class="articlecard-tagline">I vores føljeton om Radars
+                                fremtid har vi taget en snak
+                                med lederteamet på Turkis...</a></p>
+                        <a href="#" class="read-more read-more--card">Læs Artikel →</a>
+                    </div>
+                </article>
+
+                <!--Article card 3-->
+                <article class="articlecard">
+                    <div class="articlecard-img">
+                        <a href="#">
+                            <img class="image-cover" src="img/blog3-sophia.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="articlecard-items">
+                        <span class="date-span">12-12-2024</span>
+                        <h3 class="text-truncate"><a href="#">Sophia Sagaradze: ”Jeg havde ikke...</a></h3>
+                        <p class="text-truncate"><a href="#" class="articlecard-tagline">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit,
+                                sed do eiusmod tempor...</a></p>
+                        <a href="#" class="read-more read-more--card">Læs Artikel →</a>
+                    </div>
+                </article>
+                <!--Article card 4-->
+                <article class="articlecard">
+                    <div class="articlecard-img">
+                        <a href="#">
+                            <img class="image-cover" src="img/blog3-sophia.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="articlecard-items">
+                        <span class="date-span">12-12-2024</span>
+                        <h3 class="text-truncate"><a href="#">Sophia Sagaradze: ”Jeg havde ikke...</a></h3>
+                        <p class="text-truncate"><a href="#" class="articlecard-tagline">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit,
+                                sed do eiusmod tempor...</a></p>
+                        <a href="#" class="read-more read-more--card">Læs Artikel →</a>
+                    </div>
+                </article>
+
+
+                <!--Article card 1-->
+                <article class="articlecard">
+                    <div class="articlecard-img">
+                        <a href="#">
+                            <img class="image-cover" src="img/blog1-radar-2025.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="articlecard-items">
+                        <span class="date-span">12-12-2024</span>
+                        <h3 class="text-truncate"><a href="#">Sådan bliver Radars 2025</a></h3>
+                        <p class="text-truncate"><a href="#" class="articlecard-tagline">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit,
+                                sed do eiusmod tempor...</a></p>
+                        <a href="#" class="read-more read-more--card">Læs Artikel →</a>
+                    </div>
+                </article>
+
+                <!--Article card 2-->
+                <article class="articlecard">
+                    <div class="articlecard-img">
+                        <a href="#">
+                            <img class="image-cover" src="img/blog2-turkis.png" alt="">
+                        </a>
+                    </div>
+                    <div class="articlecard-items">
+                        <span class="date-span">12-12-2024</span>
+                        <h3 class="text-truncate"><a href="#">TURKIS: ”Radar har været vores sammen...</a></h3>
+                        <p class="text-truncate"><a href="#" class="articlecard-tagline">I vores føljeton om Radars
+                                fremtid har vi taget en snak
+                                med lederteamet på Turkis...</a></p>
+                        <a href="#" class="read-more read-more--card">Læs Artikel →</a>
+                    </div>
+                </article>
+
+                <!--Article card 3-->
+                <article class="articlecard">
+                    <div class="articlecard-img">
+                        <a href="#">
+                            <img class="image-cover" src="img/blog3-sophia.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="articlecard-items">
+                        <span class="date-span">12-12-2024</span>
+                        <h3 class="text-truncate"><a href="#">Sophia Sagaradze: ”Jeg havde ikke...</a></h3>
+                        <p class="text-truncate"><a href="#" class="articlecard-tagline">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit,
+                                sed do eiusmod tempor...</a></p>
+                        <a href="#" class="read-more read-more--card">Læs Artikel →</a>
+                    </div>
+                </article>
+                <!--Article card 4-->
+                <article class="articlecard">
+                    <div class="articlecard-img">
+                        <a href="#">
+                            <img class="image-cover" src="img/blog3-sophia.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="articlecard-items">
+                        <span class="date-span">12-12-2024</span>
+                        <h3 class="text-truncate"><a href="#">Sophia Sagaradze: ”Jeg havde ikke...</a></h3>
+                        <p class="text-truncate"><a href="#" class="articlecard-tagline">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit,
+                                sed do eiusmod tempor...</a></p>
+                        <a href="#" class="read-more read-more--card">Læs Artikel →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!--Slut Blog og Nyheder-->
+
+    <footer>
+        <p>2024 Radar Music Venue</p>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

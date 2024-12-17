@@ -1,0 +1,212 @@
+@media (min-width: 768px) {
+
+    /*
+    
+    Typography
+    
+    */
+    h1 {
+        font-size: 5.5rem;
+    }
+    
+    h2 {
+        font-size: 2.5rem;      /* 32px */
+        margin-bottom: /*0.875rem*/ 0.25rem;
+    }
+    
+    h3 {
+        font-size: 1.75rem;   /* 28px */
+    }
+    
+
+    .read-more--button {
+        margin: var(--space-base) auto auto 0;
+    }
+
+
+    /*
+    
+    utility classes
+    
+    */
+    .mobile-hidden {
+        display: block !important;
+    }
+
+    .mobile-hidden--flex {
+        display: flex !important;
+    }
+
+    .desktop-hidden {
+        display: none !important;
+    }
+    
+    .desktop-hidden--flex {
+        display: none !important;
+    }
+
+    /* text center tablet */
+    .text-center-mobile {
+        text-align: left;
+        justify-items: left;
+    }
+
+    /* text truncate*/
+    .text-truncate--3 {
+        -webkit-line-clamp: 4;
+    }
+
+    /*
+    flex-component
+    */
+    .flex {
+        flex-direction: row;
+        gap: 5rem;
+    }
+
+    .flex--cards {
+        gap: 1rem;
+    }
+
+    .flex--row-reverse-desktop {
+        flex-direction: row-reverse;
+    }
+
+    .flex-item-img--style1 {
+        height: 600px;
+    }
+
+    /*
+    Header
+    */
+
+    .burger {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 1.25rem;
+        
+    }
+
+    .nav-links a {
+        color: var(--white);
+        font-size: 0.875rem;
+        text-decoration: none;
+    }
+
+    /*
+    main hero
+    */
+    .main-hero {
+        height: 100vh;
+    }
+
+    .main-hero-content {
+        align-items: start;
+        margin: 1.5rem 0 0 3rem;
+        gap: 1rem;
+    }
+
+    .main-hero-content > svg{
+        max-width: 800px;
+    }
+
+    .main-hero > .overlay {
+        opacity: 0.3;
+        z-index: -1;
+    }
+
+    /*
+    underside hero - desktop
+    */
+    .underside-hero {
+        height: 75vh;
+    }
+
+    .underside-hero-content {
+        align-items: start;
+        margin: 1.5rem auto auto 3rem;
+    }
+
+    .underside-hero > .overlay {
+        opacity: 0.3;
+        z-index: -1;
+    }
+
+    /*
+    Featured concert Slider
+    */
+
+    .slider {
+        height: 65vh;
+    }
+
+
+    .slide {
+        align-content: center;
+        justify-items: end;
+    }
+
+
+    .slide-content {
+        margin: 0 5rem 0 0;
+        text-align: right;
+ 
+    }
+
+    .slide-content a, button {
+        margin: 0;
+        align-self: end;
+    }
+
+    /* -------
+    Radar Netværk Hero Divider tablet
+    ------- */
+    .netvaerk-divider {
+        padding: 0 5%;
+    }
+
+}
+
+
+/* Desktop størrelse*/
+@media (min-width: 1024px) {
+
+
+    /*
+    Featured concert Slider
+    */
+
+    .slider {
+        height: 75vh;
+    }
+
+    /* header */
+    .nav-links {
+        display: flex;
+        gap: 2.5rem;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
+
+    /* anna roemer side*/
+    .annaroemer-aside {
+        width: 35%;
+    }
+
+    /* radar netvaerk divider*/
+    .netvaerk-divider-links {
+        display: flex;
+        gap: 1rem;
+        min-width: fit-content;
+    }
+    .netvaerk-divider-stats {
+        margin: auto 0;
+    }   
+
+
+}

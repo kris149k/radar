@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frivillig</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/breakpoints.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav-container">
+
+            <a href="index.html">
+                <svg class="logo" viewBox="0 0 107.68 28.74" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Layer_1-2">
+                        <path
+                            d="M100.19 10.76h7.5v.5c0 2.06-1.66 3.7-3.75 3.7s-3.75-1.65-3.75-3.7v-.5ZM6.76 14.05h.66c2.21 0 4.69-.41 4.69-3.19S9.63 7.67 7.42 7.67h-.66v6.38Zm14.86 14.12h-8.41l-6.38-9.84h-.07v9.84H0V2.58h10.11c5.14 0 9.04 2.41 9.04 7.87 0 3.53-2 6.58-5.69 7.23l8.17 10.49ZM28.15 19.48c0 2.21 1.48 3.9 4.04 3.9s4.03-1.7 4.03-3.9-1.48-3.94-4.03-3.94-4.04 1.8-4.04 3.94m14.14 8.69h-6.28v-1.93h-.07c-1.1 1.73-3.28 2.51-5.35 2.51-5.24 0-8.93-4.31-8.93-9.3s3.62-9.26 8.86-9.26c2.03 0 4.17.75 5.48 2.27v-1.7h6.28v17.41ZM51.53 19.48c0 2.21 1.48 3.9 4.03 3.9s4.03-1.7 4.03-3.9-1.48-3.94-4.03-3.94-4.03 1.8-4.03 3.94m7.86 6.75h-.07c-1.1 1.73-3.28 2.51-5.35 2.51-5.24 0-8.93-4.31-8.93-9.3s3.62-9.26 8.86-9.26c2.03 0 4.17.75 5.48 2.27V0h6.28v28.17h-6.28v-1.93ZM74.44 19.48c0 2.21 1.48 3.9 4.04 3.9s4.03-1.7 4.03-3.9-1.48-3.94-4.03-3.94-4.04 1.8-4.04 3.94m14.14 8.69H82.3v-1.93h-.07c-1.1 1.73-3.28 2.51-5.35 2.51-5.24 0-8.93-4.31-8.93-9.3s3.62-9.26 8.86-9.26c2.03 0 4.17.75 5.48 2.27v-1.7h6.28v17.41ZM92.38 10.76h6.28v17.41h-6.28z">
+                        </path>
+                    </g>
+                </svg>
+            </a>
+            <!-- Mobil navbar -->
+            <div onclick="toggleMenuActive()" id="burger" class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+
+
+            <aside id="mobile-menu" class="mobile-menu">
+                <ul class="nav-links-mobile">
+                    <li><a href="/koncertprogram.html">Koncertprogram</a></li>
+                    <li><a href="/radarnetvaerk.html">Radar Netværk</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                    <li><a href="/frivillig.html">Bliv Frivillig</a></li>
+                    <li><a href="/omradar.html">Om Radar</a></li>
+                </ul>
+            </aside>
+
+            <!-- Desktop navbar -->
+            <ul class="nav-links">
+                <li><a href="/koncertprogram.html">Koncertprogram</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a href="/radarnetvaerk.html">
+                            Radar Netværk
+                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m8 10 4 4 4-4" />
+                            </svg>
+                        </a>
+                        <div class="dropdown-content">
+                            <ul>
+                                <a href="/radarnetvaerk.html#section1">
+                                    <li>Nyheder</li>
+                                </a>
+                                <a href="/radarnetvaerk.html#section2">
+                                    <li>Mindedeling</li>
+                                </a>
+                                <a href="/radarnetvaerk.html#section3">
+                                    <li>Ønskeliste</li>
+                                </a>
+                                <a href="/radarnetvaerk.html#section4">
+                                    <li>Musikanbefalinger</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="/frivillig.html">Bliv Frivillig</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a href="/omradar.html">Om Radar <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m8 10 4 4 4-4" />
+                            </svg>
+                        </a>
+                        <div class="dropdown-content">
+                            <ul>
+                                <a>
+                                    <li>Podcast</li>
+                                </a>
+                                <a>
+                                    <li>Arkiv</li>
+                                </a>
+                                <a>
+                                    <li>Venue Specs</li>
+                                </a>
+                                <a>
+                                    <li>Informationer</li>
+                                </a>
+                                <a>
+                                    <li>Workshops</li>
+                                </a>
+                            </ul>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="nav-log-in">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-width="2"
+                                d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>
+                        <span>log in<span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main class="underside-hero text-center-mobile">
+        <div class="underside-hero-content">
+            <h1>Bliv frivillig</h1>
+            <p>
+                Som frivillig på Radar bliver du en del af byens mest passionerede musikfællesskab, hvor venskaber opstår over 
+                fælles kærlighed til livemusik. Her møder du andre ildsjæle til hyggelige personalemøder og fællesspisninger, mens du får 
+                unikke oplevelser bag scenen og er med til at skabe magiske koncertøjeblikke.
+            </p>
+        </div>
+        <img src="img/frivillig1.png" alt="Bliv frivillig hero image">
+        <div class="overlay-frivillig mobile-hidden"></div>
+        <div class="overlay desktop-hidden"></div>
+    </main>
+
+    <section class="section-gap">
+        <div class="flex flex--row-reverse-desktop section-content">
+            <div class="flex-item-img">
+                <img src="img/bar.png" class="image-cover" alt="om rader image 1">
+            </div>
+            <div class="flex-item content-center">
+                <h2>De frivillige på Radar</h2>
+                <p>
+                    Diversitet, fællesskab og musik. På Radar vægter vi disse tre ting virkelig højt, og året rundt arbejder omkring 45 medarbejdere 
+                    for at videreformidle livemusik og tværfaglige samarbejder. En stor del af disse er frivillige. 
+                </p>
+                <p>
+                    I Radar-regi er de frivillige en ekstremt vigtig og skattet medarbejdergruppe, fordi det ganske enkelt ikke ville kunne 
+                    lade sig gøre at drive Radar, afvikle koncerter og formidle den smalle musik uden deres hjælp og tilstedeværelse. Områder som bar, 
+                    entré, garderobe, foto, lys og afvikling håndteres primært af frivilliggruppen, der desuden udfører diverse ad hoc-opgaver, der måtte 
+                    opstå henover året. 
+                </p>
+                <p>
+                    De frivillige er oftest tilknyttet et bestemt arbejdsområde, og hver måned bliver der lavet vagtplaner, 
+                    der søger at tilgodese folks præferencer. Hvis du er interesseret i at blive en del af frivilligegruppen, 
+                    så skal du vide, at du skal være fyldt 20 år for at komme i betragtning. Desuden forventes det, at du har en interesse i 
+                    musik- og kulturområdet, gode samarbejdsevner, engagement i Radars virke og altid optræder imødekommende over for publikum og 
+                    Radar tilbyder forskellige medarbejdergoder for de frivillige, såsom gratis adgang til Radars koncerter, billige personalepriser 
+                    i baren, mulighed for at få venner og familie skrevet på gæstelister. Derudover har vi også gæstelistepladser hos vores gode kolleger 
+                    på Train. Desuden holder vi flere sociale arrangementer hen over året for alle medarbejdere på Radar. Faktisk er det sociale aspekt i 
+                    det frivillige arbejde noget af det, som mange frivillige, både nye og erfarende, sætter allermest pris på ved deres tjans på Radar.
+                </p>
+                <p>
+                    På Radar arbejder vi ud fra en række fælles værdier og retningslinjer, som er nærmere beskrevet i vores personalehåndbog.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section-gap">
+        <div class="flex section-content">
+            <div class="flex-item-img">
+                <img src="img/gulvmennesker.png" class="image-cover" alt="om rader image 2">
+            </div>
+
+            <div class="flex-item content-center">
+                <h2>Arbejdsområder for de frivillige</h2>
+                <p>
+                    Bar/dør: Dette er den største frivilliggruppe. Her skal de frivillige tage tre vagter om måneden. Man møder som regel ind én time før dørene åbner og arbejdsopgaverne er klargøring af bar, garderobe og sal, vareopfyldning, kundebetjening i både entre og bar, og oprydning efter der er lukket ned efter koncerten.
+                </p>
+                <p>
+                    Lys: Som lysassistent på Radar arbejder man tæt sammen med Radars tekniker. Man møder oftest ind om eftermiddagen, og sidder med under lydprøverne. Af og til medbringer bands egen lystekniker eller visuals, og her kræver det, at man er samarbejdsvilling og fleksibel. Man har fri når koncerten er slut, og der er ryddet op på scenen. Som lysassistent får man to-tre vagter pr. måned.
+                <p>
+                    Foto: Radars fotografer tager cirka tre vagter om måneden hver, således at vi altid får dokumenteret de afholdte arrangementer. Her får du rig mulighed for at arbejde kreativt og samtidig udvikle dit fotografiske talent. Rammerne er meget frie, så længe du viser hensyn til både musikere og publikum. Billederne bruger Radar i forskellige sammenhænge, og fotografen bliver selvfølgelig altid krediteret.
+                </p>
+                <p>
+                    Afvikling: Som afvikler på Radar skal man tage tre vagter om måneden. Afvikleren møder ind tidligt på eftermiddagen (oftest kl. 15.00), og gør huset klar til at tage imod musikerne. Som afvikler har man ansvaret for flere praktiske ting relateret til musikerne og billetsalget, og det kræver, at man har overblik og en særligt god situationsfornemmelse, da der kan opstå flere forskellige situationer, som man skal forholde sig til undervejs på vagten. Man har fri, når dørene åbner for publikum.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="flex section-content">
+            <div class="flex-item">
+            <h2>Bliv frivillig</h2>
+                <p>
+                    Radar søger løbende frivillige, og vi er så priviligerede, at vi rent faktisk har en venteliste, som man kan blive
+                    skrevet op på. Hvis du er interesseret i at blive en del af et vidunderligt fællesskab, der også tager den frivillige tjans
+                    alvorligt, så skal du sende en kort ansøgning til spillestedsleder Martin Aagaard Jensen på martin(a)radarlive.dk. Her skal du
+                    fortælle lidt om dig selv. Din alder, din baggrund, din erfaring og ikke mindst hvorfor du gerne vil være frivillig på Radar.
+                </p>
+                <p>
+                    Vi glæder os til at høre fra dig
+                </p>
+            </div>
+            <div class="card flex-item">
+                <h3>Send ansøgning til:</h3>
+                <ul class="list-style2">
+                    <li>martin(a)radarlive.dk.</li>
+                </ul>
+                <h4>Indhold:</h4>
+                <ul class="list-style2">
+                    <li>Alder</li>
+                    <li>Din baggrund og lidt om dig selv</li>
+                    <li>Relevant erfaring</li>
+                    <li>Hvorfor du grene vil være frivllig på Radar</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>2024 Radar Music Venue</p>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

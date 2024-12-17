@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /
+Sitemap: https://kwba.dk/sitemap.xml
